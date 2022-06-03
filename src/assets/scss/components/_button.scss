@@ -1,0 +1,57 @@
+@include b(button) {
+    display: inline-flex;
+    align-items: center;
+    height: 2rem;
+    padding: $base-padding/4 $base-padding/2;
+    // background-color: var(--button-base-bg);
+    border: 0.0625rem solid $border-color;
+    border-radius: $base-border-radius;
+    font-size: $base-font-size*0.875;
+    line-height: 1.3;
+    font-family: $base-font-family;
+    user-select: none;
+
+    @include m(primary) {
+        background-color: var(--button-primary-bg);
+        border-color: transparent;
+        box-shadow: none;
+        color: var(--color-white);
+        fill: currentColor;
+
+        &:focus,
+        &:hover {
+            background-color: var(--button-primary-bg-hover);
+        }
+    }
+
+    @include m(alert) {
+        background-color: var(--button-alert-bg);
+        border-color: transparent;
+        box-shadow: none;
+        color: var(--color-white);
+        fill: currentColor;
+
+        &:focus,
+        &:hover {
+            background-color: var(--button-alert-bg-hover);
+        }
+    }
+
+    @include m(success) {
+        background-color: var(--button-success-bg);
+        border-color: transparent;
+        box-shadow: none;
+        color: var(--color-white);
+        fill: currentColor;
+
+        &:focus,
+        &:hover {
+            background-color: var(--button-success-bg-hover);
+        }
+    }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}

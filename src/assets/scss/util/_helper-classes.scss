@@ -1,0 +1,65 @@
+@include b(error-message) {
+    padding: $base-padding*0.375 0;
+    color: $alert;
+}
+
+@include b(label) {
+    display: block;
+    padding: $base-padding*0.375 0;
+    font-size: $base-font-size;
+}
+
+@include b(form) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background-color: $gray-200;
+    padding: $base-padding;
+    border-radius: $base-border-radius;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    @include m(add) {
+        margin: 100px auto 0 auto;
+        max-width: 600px;
+    }
+
+    @include e(title) {
+        font-weight: $font-weight-bold;
+        padding: $base-padding*0.375 0;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+    }
+
+    @include e(header) {
+        padding: $base-padding 0;
+        display: flex;
+        flex: 0 0 auto;
+    }
+
+    @include e(content) {
+        flex: 1 0 auto;
+    }
+
+    @include e(control-bar) {
+        display: flex;
+        margin-top: $base-margin;
+        flex: 0 0 auto;
+        @include m(right) {
+            justify-content: end;
+        }
+    }
+}
+
+@include b(m-t) {
+    margin-top: $base-margin;
+}
+@include b(m-r) {
+    margin-right: $base-margin;
+}
+@include b(m-b) {
+    margin-bottom: $base-margin;
+}
+@include b(m-l) {
+    margin-left: $base-margin;
+}

@@ -1,0 +1,22 @@
+@include b(input-group) {
+    @include m(error) {
+        .input {
+            border-color: $alert;
+        }
+    }
+}
+
+@include b(input) {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    height: 2rem;
+    box-sizing: border-box;
+    padding: $base-padding*0.375;
+    font-size: $base-font-size*0.875;
+    line-height: 1;
+    color: $base-font-color;
+    border: 0.0625rem solid $border-color;
+    outline: none;
+    border-radius: $base-border-radius;
+}

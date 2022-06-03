@@ -1,15 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import AddItem from '@/components/AddItem'
+import ViewItems from '@/components/ViewItems'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+    mode: 'history',
+    routes: [
+        {
+            path: '/',
+            name: 'AddItem',
+            component: AddItem
+        },
+        {
+            path: '/view',
+            name: 'ViewItems',
+            component: ViewItems
+        },
+        {
+            path: '*',
+            redirect: '/',
+        }
+    ]
 })

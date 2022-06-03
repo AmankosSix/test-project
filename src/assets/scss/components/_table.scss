@@ -1,0 +1,53 @@
+@include b(table) {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: $base-font-size*0.875;
+    color: var(--color-text);
+
+    // @include e(thead) {
+    //     display: table-header-group;
+    // }
+
+    @include e(tbody) {
+        tr:nth-child(even) {
+            background-color: $white;
+        }
+    }
+
+    // @include e(row) {
+    //     display: table-row;
+    // }
+
+    @include e(th) {
+        display: table-cell;
+        padding: $base-padding/2 $base-padding*0.375;
+        background-color: var(--color-bg);
+        border: 0.0625rem solid var(--color-table-border);
+        font-weight: $font-weight-normal;
+        white-space: nowrap;
+        text-align: left;
+        color: var(--color-table-th);
+        @include m(tiny) {
+            width: 1%;
+        }
+        @include m(short) {
+            width: 2rem;
+        }
+    }
+
+    @include e(td) {
+        display: table-cell;
+        padding: $base-padding*0.375;
+        border: 0.0625rem solid var(--color-border);
+        font-weight: $font-weight-normal;
+        text-align: left;
+        @include m(tiny) {
+            width: 1%;
+        }
+        @include m(short) {
+            width: 2rem;
+        }
+    }
+}

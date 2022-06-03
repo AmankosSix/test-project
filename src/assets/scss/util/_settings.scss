@@ -1,0 +1,77 @@
+:root {
+    --color-bg: #ffffff;
+    --color-white: #ffffff;
+    --color-black: #202225;
+    --color-text: #333333;
+
+    --button-base-bg: #f9f9f9;
+    --button-base-bg-hover: #ffffff;
+    --button-primary-bg: #0165a7;
+    --button-primary-bg-hover: #0069b6;
+    --button-success-bg: #298800;
+    --button-success-bg-hover: #2d9700;
+    --button-alert-bg: #990000;
+    --button-alert-bg-hover: #be2626;
+    --button-border-color: #d7d7d7;
+
+    --color-table-border: #dddddd;
+    --color-table-checked: #fff9eb;
+    --color-table-checked-hover: #f7f8fc;
+    --color-table-success: #f3fff2;
+    --color-table-alert: #fff6f6;
+    --color-table-th: #666666;
+}
+
+$white:    #ffffff;
+$gray-100: #fafafa;
+$gray-200: #f8f8f8;
+$gray-300: #eeeeee;
+$gray-400: #dddddd;
+$gray-500: #cccccc;
+$gray-600: #888888;
+$gray-700: #666666;
+$gray-800: #333333;
+$gray-900: #1d1d1d;
+$black:    #000000;
+$red:      #c70000;
+
+$primary:       #31588a;
+$link:          #0165a7;
+$link-light:    #f7f8fc;
+$success:       #007300;
+$success-light: #e4eddb;
+$alert:         #990000;
+$alert-light:   #ffdddd;
+$delete:        #de514f;
+$warning:       #dcc896;
+$warning-light: #fff9eb;
+
+$border-color: $gray-400;
+$border-color-light: $gray-300;
+$base-font-color: $gray-800;
+
+$base-margin: 1rem;
+$base-padding: 1rem;
+$base-border: 0.0625rem $gray-800;
+$base-border-radius: 0.25rem;
+$border-radius-small: 0.125rem;
+
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+$base-font-family: Arial, sans-serif;
+$font-weight-normal: normal;
+$font-weight-bold: 600;
+
+html {
+    height: 100%;
+    // background-color: var(--color-bg);
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: $base-font-family;
+    color: var(--color-text);
+    overflow: hidden;
+}
